@@ -7,10 +7,6 @@ A clean, minimalist, bilingual (English/French) academic website inspired by the
 ✅ **Multi-page structure** - Separate HTML pages for each section
 ✅ **Bilingual support** - EN/FR language toggle with localStorage
 ✅ **Responsive design** - Mobile-first, works on all devices
-✅ **Team photo grid** - Display team members with photos like Chandar Lab
-✅ **Google Scholar integration** - Link to publications instead of manual entry
-✅ **Minimalist design** - Clean, content-focused aesthetic
-✅ **GitHub Pages ready** - Deploy in minutes
 
 ## File Structure
 
