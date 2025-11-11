@@ -1,4 +1,4 @@
-# Academic Website - Chandar Lab Style
+# Academic Website 
 
 A clean, minimalist, bilingual (English/French) academic website inspired by the Chandar Lab design at Polytechnique Montreal.
 
