@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. [Your Name] - Université Laval</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="lang-en" class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button id="lang-fr" class="lang-btn" onclick="switchLanguage('fr')">FR</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-title">
+                <span data-en="Dr. [Your Name]" data-fr="Dr. [Votre nom]">Dr. [Your Name]</span>
+            </a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active" data-en="Home" data-fr="Accueil">Home</a></li>
+                <li><a href="research.html" data-en="Research" data-fr="Recherche">Research</a></li>
+                <li><a href="team.html" data-en="Team" data-fr="Équipe">Team</a></li>
+                <li><a href="teaching.html" data-en="Teaching" data-fr="Enseignement">Teaching</a></li>
+                <li><a href="prospective.html" data-en="Prospective Students" data-fr="Futurs étudiants">Prospective Students</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section with Team Photos Grid -->
+            <section class="hero-grid">
+                <div class="profile-card pi-card">
+                    <img src="https://via.placeholder.com/150/4A90E2/FFFFFF?text=Your+Photo" alt="Dr. [Your Name]">
+                </div>
+                <!-- Example team member photos - add more as needed -->
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+1" alt="Team Member">
+                </div>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+2" alt="Team Member">
+                </div>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+3" alt="Team Member">
+                </div>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+4" alt="Team Member">
+                </div>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+5" alt="Team Member">
+                </div>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+6" alt="Team Member">
+                </div>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+7" alt="Team Member">
+                </div>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+8" alt="Team Member">
+                </div>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+9" alt="Team Member">
+                </div>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+10" alt="Team Member">
+                </div>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Student+11" alt="Team Member">
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="content-section">
+                <h2 data-en="About the Lab" data-fr="À propos du laboratoire">About the Lab</h2>
+                <p data-en="[Your Lab Name] is a research group in the Department of Computer Science and Software Engineering at Université Laval. The long-term mission of our group is to [describe your research mission]. Currently, the lab focuses on several areas in computer science including [list your research areas]."
+                   data-fr="[Nom de votre laboratoire] est un groupe de recherche au Département d'informatique et de génie logiciel de l'Université Laval. La mission à long terme de notre groupe est de [décrire votre mission de recherche]. Actuellement, le laboratoire se concentre sur plusieurs domaines de l'informatique, notamment [énumérer vos domaines de recherche].">
+                    [Your Lab Name] is a research group in the Department of Computer Science and Software Engineering at Université Laval. The long-term mission of our group is to [describe your research mission]. Currently, the lab focuses on several areas in computer science including [list your research areas].
+                </p>
+                <p data-en="Our lab is affiliated with [relevant institutes/organizations]."
+                   data-fr="Notre laboratoire est affilié à [instituts/organisations pertinents].">
+                    Our lab is affiliated with [relevant institutes/organizations].
+                </p>
+            </section>
+
+            <!-- News Section -->
+            <section class="content-section">
+                <h2 data-en="News" data-fr="Nouvelles">News</h2>
+                <ul class="news-list">
+                    <li>
+                        <strong>([Month Year])</strong> 
+                        <span data-en="[News item in English]" data-fr="[Nouvelle en français]">[News item in English]</span>
+                    </li>
+                    <li>
+                        <strong>([Month Year])</strong> 
+                        <span data-en="[News item in English]" data-fr="[Nouvelle en français]">[News item in English]</span>
+                    </li>
+                    <li>
+                        <strong>([Month Year])</strong> 
+                        <span data-en="[News item in English]" data-fr="[Nouvelle en français]">[News item in English]</span>
+                    </li>
+                    <li>
+                        <strong>([Month Year])</strong> 
+                        <span data-en="[News item in English]" data-fr="[Nouvelle en français]">[News item in English]</span>
+                    </li>
+                    <li>
+                        <strong>([Month Year])</strong> 
+                        <span data-en="[News item in English]" data-fr="[Nouvelle en français]">[News item in English]</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="content-section">
+                <h2 data-en="Contact" data-fr="Contact">Contact</h2>
+                <div class="contact-grid">
+                    <div>
+                        <p><strong data-en="Email:" data-fr="Courriel :">Email:</strong> <a href="mailto:your.email@ulaval.ca">your.email@ulaval.ca</a></p>
+                        <p><strong data-en="Office:" data-fr="Bureau :">Office:</strong> <span data-en="[Building], Room [XXX]" data-fr="[Pavillon], Local [XXX]">[Building], Room [XXX]</span></p>
+                        <p><strong data-en="Phone:" data-fr="Téléphone :">Phone:</strong> +1 (418) XXX-XXXX</p>
+                    </div>
+                    <div>
+                        <p><strong data-en="Links:" data-fr="Liens :">Links:</strong></p>
+                        <p><a href="#" target="_blank">Google Scholar</a></p>
+                        <p><a href="#" target="_blank">GitHub</a></p>
+                        <p><a href="#" target="_blank">LinkedIn</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 <span data-en="Dr. [Your Name]" data-fr="Dr. [Votre nom]">Dr. [Your Name]</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Team - Dr. [Your Name]" data-fr="Équipe - Dr. [Votre nom]">Team - Dr. [Your Name]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="lang-en" class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button id="lang-fr" class="lang-btn" onclick="switchLanguage('fr')">FR</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-title">
+                <span data-en="Dr. [Your Name]" data-fr="Dr. [Votre nom]">Dr. [Your Name]</span>
+            </a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
+                <li><a href="research.html" data-en="Research" data-fr="Recherche">Research</a></li>
+                <li><a href="team.html" class="active" data-en="Team" data-fr="Équipe">Team</a></li>
+                <li><a href="teaching.html" data-en="Teaching" data-fr="Enseignement">Teaching</a></li>
+                <li><a href="prospective.html" data-en="Prospective Students" data-fr="Futurs étudiants">Prospective Students</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 data-en="Team" data-fr="Équipe">Team</h1>
+
+            <!-- Principal Investigator -->
+            <section class="content-section">
+                <h2 data-en="Principal Investigator" data-fr="Chercheur principal">Principal Investigator</h2>
+                
+                <div class="team-member-detailed">
+                    <img src="https://via.placeholder.com/200/4A90E2/FFFFFF?text=Your+Photo" alt="Dr. [Your Name]">
+                    <div class="member-info">
+                        <h3>
+                            <a href="#">
+                                <span data-en="Dr. [Your Name]" data-fr="Dr. [Votre nom]">Dr. [Your Name]</span>
+                            </a>
+                        </h3>
+                        <p class="member-title" data-en="Associate Professor" data-fr="Professeur agrégé">Associate Professor</p>
+                        <p data-en="Department of Computer Science and Software Engineering, Université Laval"
+                           data-fr="Département d'informatique et de génie logiciel, Université Laval">
+                            Department of Computer Science and Software Engineering, Université Laval
+                        </p>
+                        <p><strong data-en="Research Areas:" data-fr="Domaines de recherche :">Research Areas:</strong> 
+                            <span data-en="[Your research areas]" data-fr="[Vos domaines de recherche]">[Your research areas]</span>
+                        </p>
+                        <p><strong data-en="Email:" data-fr="Courriel :">Email:</strong> <a href="mailto:your.email@ulaval.ca">your.email@ulaval.ca</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Postdocs -->
+            <section class="content-section">
+                <h2 data-en="Postdoctoral Researchers" data-fr="Chercheurs postdoctoraux">Postdoctoral Researchers</h2>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=Postdoc" alt="Postdoc Name">
+                        <h3><a href="#">[Postdoc Name]</a></h3>
+                        <p class="member-research" data-en="Research Areas:" data-fr="Domaines de recherche :">
+                            Research Areas: <span data-en="[Research areas]" data-fr="[Domaines de recherche]">[Research areas]</span>
+                        </p>
+                    </div>
+
+                    <!-- Add more postdocs as needed -->
+                </div>
+            </section>
+
+            <!-- PhD Students -->
+            <section class="content-section">
+                <h2 data-en="PhD Students" data-fr="Étudiants au doctorat">PhD Students</h2>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=PhD+1" alt="Student Name">
+                        <h3><a href="#">[Student Name]</a></h3>
+                        <p class="member-note" data-en="Co-supervisor: [Name]" data-fr="Co-superviseur : [Nom]">Co-supervisor: [Name]</p>
+                        <p class="member-research" data-en="Research Areas:" data-fr="Domaines de recherche :">
+                            Research Areas: <span data-en="[Research areas]" data-fr="[Domaines de recherche]">[Research areas]</span>
+                        </p>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=PhD+2" alt="Student Name">
+                        <h3><a href="#">[Student Name]</a></h3>
+                        <p class="member-research" data-en="Research Areas:" data-fr="Domaines de recherche :">
+                            Research Areas: <span data-en="[Research areas]" data-fr="[Domaines de recherche]">[Research areas]</span>
+                        </p>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=PhD+3" alt="Student Name">
+                        <h3><a href="#">[Student Name]</a></h3>
+                        <p class="member-note" data-en="(Fast Tracked from Masters)" data-fr="(Transfert direct de la maîtrise)">(Fast Tracked from Masters)</p>
+                        <p class="member-research" data-en="Research Areas:" data-fr="Domaines de recherche :">
+                            Research Areas: <span data-en="[Research areas]" data-fr="[Domaines de recherche]">[Research areas]</span>
+                        </p>
+                    </div>
+
+                    <!-- Add more PhD students as needed -->
+                </div>
+            </section>
+
+            <!-- Masters Students -->
+            <section class="content-section">
+                <h2 data-en="Master's Students" data-fr="Étudiants à la maîtrise">Master's Students</h2>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=MSc+1" alt="Student Name">
+                        <h3><a href="#">[Student Name]</a></h3>
+                        <p class="member-research" data-en="Research Areas:" data-fr="Domaines de recherche :">
+                            Research Areas: <span data-en="[Research areas]" data-fr="[Domaines de recherche]">[Research areas]</span>
+                        </p>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=MSc+2" alt="Student Name">
+                        <h3><a href="#">[Student Name]</a></h3>
+                        <p class="member-note" data-en="Co-supervisor: [Name]" data-fr="Co-superviseur : [Nom]">Co-supervisor: [Name]</p>
+                        <p class="member-research" data-en="Research Areas:" data-fr="Domaines de recherche :">
+                            Research Areas: <span data-en="[Research areas]" data-fr="[Domaines de recherche]">[Research areas]</span>
+                        </p>
+                    </div>
+
+                    <!-- Add more Masters students as needed -->
+                </div>
+            </section>
+
+            <!-- Interns/RAs -->
+            <section class="content-section">
+                <h2 data-en="Interns / Research Assistants" data-fr="Stagiaires / Assistants de recherche">Interns / Research Assistants</h2>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150/667eea/FFFFFF?text=RA+1" alt="Student Name">
+                        <h3><a href="#">[Student Name]</a></h3>
+                        <p class="member-research" data-en="Research Areas:" data-fr="Domaines de recherche :">
+                            Research Areas: <span data-en="[Research areas]" data-fr="[Domaines de recherche]">[Research areas]</span>
+                        </p>
+                    </div>
+
+                    <!-- Add more interns/RAs as needed -->
+                </div>
+            </section>
+
+            <!-- Alumni -->
+            <section class="content-section">
+                <h2 data-en="Alumni and their next step" data-fr="Anciens étudiants et leur prochaine étape">Alumni and their next step</h2>
+
+                <h3 data-en="Postdocs" data-fr="Chercheurs postdoctoraux">Postdocs</h3>
+                <ul class="alumni-list">
+                    <li>
+                        <a href="#">[Alumnus Name]</a> ([Start Year] - [End Year]) ⸺ 
+                        <span data-en="[Current Position] at [Institution]" data-fr="[Poste actuel] à [Institution]">[Current Position] at [Institution]</span>
+                    </li>
+                    <!-- Add more postdoc alumni -->
+                </ul>
+
+                <h3 data-en="PhD Students" data-fr="Étudiants au doctorat">PhD Students</h3>
+                <ul class="alumni-list">
+                    <li>
+                        <a href="#">[Alumnus Name]</a> ([Start Date] - [End Date]) ⸺ 
+                        <span data-en="[Current Position] at [Institution]" data-fr="[Poste actuel] à [Institution]">[Current Position] at [Institution]</span>
+                    </li>
+                    <!-- Add more PhD alumni -->
+                </ul>
+
+                <h3 data-en="Master's Students" data-fr="Étudiants à la maîtrise">Master's Students</h3>
+                <ul class="alumni-list">
+                    <li>
+                        <a href="#">[Alumnus Name]</a> ([Start Date] - [End Date]) ⸺ 
+                        <span data-en="[Current Position] at [Institution]" data-fr="[Poste actuel] à [Institution]">[Current Position] at [Institution]</span>
+                    </li>
+                    <li>
+                        <a href="#">[Alumnus Name]</a> ([Start Date] - [End Date]) ⸺ 
+                        <span data-en="[Current Position] at [Institution]" data-fr="[Poste actuel] à [Institution]">[Current Position] at [Institution]</span>
+                    </li>
+                    <!-- Add more Masters alumni -->
+                </ul>
+
+                <h3 data-en="Interns/RAs" data-fr="Stagiaires/Assistants de recherche">Interns/RAs</h3>
+                <ul class="alumni-list">
+                    <li>
+                        <a href="#">[Alumnus Name]</a> ([Start Date] - [End Date]) ⸺ 
+                        <span data-en="Back to [Institution]" data-fr="Retour à [Institution]">Back to [Institution]</span>
+                    </li>
+                    <!-- Add more intern/RA alumni -->
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 <span data-en="Dr. [Your Name]" data-fr="Dr. [Votre nom]">Dr. [Your Name]</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

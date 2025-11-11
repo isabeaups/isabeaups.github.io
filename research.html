@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Research - Dr. [Your Name]" data-fr="Recherche - Dr. [Votre nom]">Research - Dr. [Your Name]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="lang-en" class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button id="lang-fr" class="lang-btn" onclick="switchLanguage('fr')">FR</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-title">
+                <span data-en="Dr. [Your Name]" data-fr="Dr. [Votre nom]">Dr. [Your Name]</span>
+            </a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
+                <li><a href="research.html" class="active" data-en="Research" data-fr="Recherche">Research</a></li>
+                <li><a href="team.html" data-en="Team" data-fr="Équipe">Team</a></li>
+                <li><a href="teaching.html" data-en="Teaching" data-fr="Enseignement">Teaching</a></li>
+                <li><a href="prospective.html" data-en="Prospective Students" data-fr="Futurs étudiants">Prospective Students</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 data-en="Research" data-fr="Recherche">Research</h1>
+
+            <!-- Research Interests -->
+            <section class="content-section">
+                <h2 data-en="Research Interests" data-fr="Intérêts de recherche">Research Interests</h2>
+                <ul class="simple-list">
+                    <li data-en="[Research Area 1]" data-fr="[Domaine de recherche 1]">[Research Area 1]</li>
+                    <li data-en="[Research Area 2]" data-fr="[Domaine de recherche 2]">[Research Area 2]</li>
+                    <li data-en="[Research Area 3]" data-fr="[Domaine de recherche 3]">[Research Area 3]</li>
+                    <li data-en="[Research Area 4]" data-fr="[Domaine de recherche 4]">[Research Area 4]</li>
+                </ul>
+            </section>
+
+            <!-- Current Projects -->
+            <section class="content-section">
+                <h2 data-en="Current Research Projects" data-fr="Projets de recherche actuels">Current Research Projects</h2>
+                
+                <div class="research-project">
+                    <h3 data-en="[Project Title 1]" data-fr="[Titre du projet 1]">[Project Title 1]</h3>
+                    <p data-en="[Description of the project, including objectives, methodology, and expected outcomes. Include funding sources and collaborators.]"
+                       data-fr="[Description du projet, y compris les objectifs, la méthodologie et les résultats attendus. Inclure les sources de financement et les collaborateurs.]">
+                        [Description of the project, including objectives, methodology, and expected outcomes. Include funding sources and collaborators.]
+                    </p>
+                </div>
+
+                <div class="research-project">
+                    <h3 data-en="[Project Title 2]" data-fr="[Titre du projet 2]">[Project Title 2]</h3>
+                    <p data-en="[Description of the project, including objectives, methodology, and expected outcomes. Include funding sources and collaborators.]"
+                       data-fr="[Description du projet, y compris les objectifs, la méthodologie et les résultats attendus. Inclure les sources de financement et les collaborateurs.]">
+                        [Description of the project, including objectives, methodology, and expected outcomes. Include funding sources and collaborators.]
+                    </p>
+                </div>
+
+                <div class="research-project">
+                    <h3 data-en="[Project Title 3]" data-fr="[Titre du projet 3]">[Project Title 3]</h3>
+                    <p data-en="[Description of the project, including objectives, methodology, and expected outcomes. Include funding sources and collaborators.]"
+                       data-fr="[Description du projet, y compris les objectifs, la méthodologie et les résultats attendus. Inclure les sources de financement et les collaborateurs.]">
+                        [Description of the project, including objectives, methodology, and expected outcomes. Include funding sources and collaborators.]
+                    </p>
+                </div>
+            </section>
+
+            <!-- Publications Section - Integrated from Google Scholar -->
+            <section class="content-section">
+                <h2 data-en="Publications" data-fr="Publications">Publications</h2>
+                <p data-en="For a complete list of publications, please visit my Google Scholar profile."
+                   data-fr="Pour une liste complète des publications, veuillez consulter mon profil Google Scholar.">
+                    For a complete list of publications, please visit my Google Scholar profile.
+                </p>
+                
+                <div class="publication-links">
+                    <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" class="btn-primary">
+                        <span data-en="View Google Scholar Profile" data-fr="Voir le profil Google Scholar">View Google Scholar Profile</span>
+                    </a>
+                </div>
+
+                <!-- Optional: Embedded Google Scholar Widget -->
+                <!-- You can replace the iframe src with your actual Google Scholar profile -->
+                <!--
+                <div class="scholar-embed">
+                    <iframe src="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID&hl=en" 
+                            width="100%" 
+                            height="600" 
+                            frameborder="0"></iframe>
+                </div>
+                -->
+
+                <!-- Alternative: Selected Publications (if you want to manually highlight a few) -->
+                <h3 data-en="Selected Recent Publications" data-fr="Publications récentes sélectionnées">Selected Recent Publications</h3>
+                <ul class="simple-list">
+                    <li data-en="[Leave this section for your most important recent papers if desired, otherwise remove]"
+                        data-fr="[Laissez cette section pour vos articles récents les plus importants si désiré, sinon supprimez]">
+                        [Leave this section for your most important recent papers if desired, otherwise remove]
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Collaborators -->
+            <section class="content-section">
+                <h2 data-en="Collaborators" data-fr="Collaborateurs">Collaborators</h2>
+                <p data-en="I am fortunate to collaborate with researchers from various institutions:"
+                   data-fr="J'ai la chance de collaborer avec des chercheurs de diverses institutions :">
+                    I am fortunate to collaborate with researchers from various institutions:
+                </p>
+                <ul class="simple-list">
+                    <li><a href="#">[Collaborator Name]</a>, [Institution]</li>
+                    <li><a href="#">[Collaborator Name]</a>, [Institution]</li>
+                    <li><a href="#">[Collaborator Name]</a>, [Institution]</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 <span data-en="Dr. [Your Name]" data-fr="Dr. [Votre nom]">Dr. [Your Name]</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

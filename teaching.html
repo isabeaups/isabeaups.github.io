@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Teaching - Dr. [Your Name]" data-fr="Enseignement - Dr. [Votre nom]">Teaching - Dr. [Your Name]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="lang-en" class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button id="lang-fr" class="lang-btn" onclick="switchLanguage('fr')">FR</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-title">
+                <span data-en="Dr. [Your Name]" data-fr="Dr. [Votre nom]">Dr. [Your Name]</span>
+            </a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-fr="Accueil">Home</a></li>
+                <li><a href="research.html" data-en="Research" data-fr="Recherche">Research</a></li>
+                <li><a href="team.html" data-en="Team" data-fr="Équipe">Team</a></li>
+                <li><a href="teaching.html" class="active" data-en="Teaching" data-fr="Enseignement">Teaching</a></li>
+                <li><a href="prospective.html" data-en="Prospective Students" data-fr="Futurs étudiants">Prospective Students</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 data-en="Teaching" data-fr="Enseignement">Teaching</h1>
+
+            <!-- Teaching Philosophy -->
+            <section class="content-section">
+                <h2 data-en="Teaching Philosophy" data-fr="Philosophie d'enseignement">Teaching Philosophy</h2>
+                <p data-en="[Describe your approach to teaching, what you believe is important in education, how you engage students, etc.]"
+                   data-fr="[Décrivez votre approche de l'enseignement, ce que vous croyez important dans l'éducation, comment vous engagez les étudiants, etc.]">
+                    [Describe your approach to teaching, what you believe is important in education, how you engage students, etc.]
+                </p>
+            </section>
+
+            <!-- Current Courses -->
+            <section class="content-section">
+                <h2 data-en="Current Courses (Winter 2025)" data-fr="Cours actuels (Hiver 2025)">Current Courses (Winter 2025)</h2>
+                
+                <div class="course-item">
+                    <h3>IFT-XXXX: <span data-en="[Course Name]" data-fr="[Nom du cours]">[Course Name]</span></h3>
+                    <p data-en="[Course description, level (undergraduate/graduate), topics covered]"
+                       data-fr="[Description du cours, niveau (premier cycle/cycles supérieurs), sujets couverts]">
+                        [Course description, level (undergraduate/graduate), topics covered]
+                    </p>
+                    <p><a href="#" data-en="Course website →" data-fr="Site du cours →">Course website →</a></p>
+                </div>
+
+                <div class="course-item">
+                    <h3>IFT-XXXX: <span data-en="[Course Name]" data-fr="[Nom du cours]">[Course Name]</span></h3>
+                    <p data-en="[Course description, level (undergraduate/graduate), topics covered]"
+                       data-fr="[Description du cours, niveau (premier cycle/cycles supérieurs), sujets couverts]">
+                        [Course description, level (undergraduate/graduate), topics covered]
+                    </p>
+                    <p><a href="#" data-en="Course website →" data-fr="Site du cours →">Course website →</a></p>
+                </div>
+            </section>
+
+            <!-- Past Courses -->
+            <section class="content-section">
+                <h2 data-en="Past Courses" data-fr="Cours passés">Past Courses</h2>
+                <ul class="simple-list">
+                    <li>IFT-XXXX: <span data-en="[Course Name]" data-fr="[Nom du cours]">[Course Name]</span></li>
+                    <li>IFT-XXXX: <span data-en="[Course Name]" data-fr="[Nom du cours]">[Course Name]</span></li>
+                    <li>IFT-XXXX: <span data-en="[Course Name]" data-fr="[Nom du cours]">[Course Name]</span></li>
+                    <li>IFT-XXXX: <span data-en="[Course Name]" data-fr="[Nom du cours]">[Course Name]</span></li>
+                    <li>IFT-XXXX: <span data-en="[Course Name]" data-fr="[Nom du cours]">[Course Name]</span></li>
+                </ul>
+            </section>
+
+            <!-- Office Hours -->
+            <section class="content-section">
+                <h2 data-en="Office Hours" data-fr="Heures de bureau">Office Hours</h2>
+                <p><strong data-en="When:" data-fr="Quand :">When:</strong> 
+                    <span data-en="[Day] from [Time] to [Time]" data-fr="[Jour] de [Heure] à [Heure]">[Day] from [Time] to [Time]</span>
+                </p>
+                <p><strong data-en="Where:" data-fr="Où :">Where:</strong> 
+                    <span data-en="[Building], Room [XXX]" data-fr="[Pavillon], Local [XXX]">[Building], Room [XXX]</span>
+                </p>
+                <p data-en="Or by appointment - please email me to schedule a meeting."
+                   data-fr="Ou sur rendez-vous - veuillez m'écrire pour planifier une rencontre.">
+                    Or by appointment - please email me to schedule a meeting.
+                </p>
+            </section>
+
+            <!-- Teaching Resources (Optional) -->
+            <section class="content-section">
+                <h2 data-en="Teaching Resources" data-fr="Ressources pédagogiques">Teaching Resources</h2>
+                <p data-en="[Optional: Links to lecture notes, tutorials, code repositories, etc.]"
+                   data-fr="[Optionnel : Liens vers des notes de cours, tutoriels, dépôts de code, etc.]">
+                    [Optional: Links to lecture notes, tutorials, code repositories, etc.]
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 <span data-en="Dr. [Your Name]" data-fr="Dr. [Votre nom]">Dr. [Your Name]</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
