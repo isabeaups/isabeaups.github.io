@@ -219,45 +219,6 @@ ul {
     grid-row: span 2;
 }
 
-/* ==================== Hero Section with Photo and Bio ==================== */
-.hero-section {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 3rem;
-    margin-bottom: 3rem;
-    align-items: start;
-}
-
-.hero-photo {
-    width: 250px;
-}
-
-.hero-photo img {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.hero-bio {
-    padding-top: 0;
-}
-
-.hero-bio h1 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.hero-bio p {
-    margin-bottom: 0.5rem;
-    line-height: 1.7;
-}
-
-.hero-bio strong {
-    color: var(--primary-color);
-}
-
 /* ==================== Lists ==================== */
 .simple-list {
     list-style-position: outside;
@@ -515,17 +476,6 @@ footer p {
     .pi-card {
         grid-column: span 2;
         grid-row: span 2;
-    }
-
-    /* Hero section responsive */
-    .hero-section {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .hero-photo {
-        width: 200px;
-        margin: 0 auto;
     }
 
     .team-member-detailed {
