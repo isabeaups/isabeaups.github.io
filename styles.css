@@ -223,7 +223,7 @@ ul {
 .hero-section {
     display: flex;
     align-items: flex-start; /* or center if you prefer vertical alignment /*/
-    gap: 1.5rem; /*/ space between photo and bio */
+    gap: 2rem; /*/ space between photo and bio */
 }
 
 .hero-photo {
@@ -436,6 +436,7 @@ ul {
 
 .university-logo {
   width: 100px; /* or any fixed size you need */
+  max-width: 100px;  /* never exceed 100px, even if file is bigger */
   height: auto;
   display: block;
     margin-bottom: -25px;       /* lowers the image slightly below the baseline of the h2 */
