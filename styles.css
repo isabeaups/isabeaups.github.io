@@ -221,25 +221,30 @@ ul {
 
 /* ==================== Hero Section with Photo and Bio ==================== */
 .hero-section {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 3rem;
-    margin-bottom: 3rem;
-    align-items: start;
+    display: flex;
+    align-items: flex-start; /* or center if you prefer vertical alignment /*/
+    gap: 1.5rem; /*/ space between photo and bio */
 }
 
 .hero-photo {
-    width: 250px;
+    flex: 0 0 auto;  /*keep the photo at its natural size or set a fixed width /*/
+    width: auto;
+    max-width: 250px;
+    justify-content: center;
 }
 
 .hero-photo img {
-    width: 100%;
+    width: 100%; 
+    height: auto; 
+    display: block;
     border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hero-bio {
-    padding-top: 0;
+    flex: 1 1 auto; /* bio takes remaining space /*/
+    min-width: 0; /*/ prevents overflow from long text */
+    justify-content: left;
 }
 
 .hero-bio h1 {
@@ -518,15 +523,15 @@ footer p {
     }
 
     /* Hero section responsive */
-    .hero-section {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+.hero-section { display: grid; 
+    grid-template-columns: 250px 1fr;
+    gap: 1.5rem;
+    align-items: start; }
 
-    .hero-photo {
-        width: 200px;
-        margin: 0 auto;
-    }
+.hero-photo {
+    flex: 0 0 auto; /* keep the photo at its natural size or set a fixed width /*/
+    width: 250px; /*/ optional: explicit photo width*/ 
+}
 
     .team-member-detailed {
         grid-template-columns: 1fr;
@@ -540,7 +545,7 @@ footer p {
 
     .team-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 1.5rem;
+        gap: 0.5rem;
     }
 
     .contact-grid {
