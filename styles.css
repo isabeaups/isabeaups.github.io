@@ -428,6 +428,20 @@ ul {
     margin-top: 0;
 }
 
+.heading-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5em; /* Controls horizontal spacing, e.g. 2em, 32px, etc */
+}
+
+.university-logo {
+  width: 100px; /* or any fixed size you need */
+  height: auto;
+  display: block;
+    margin-bottom: -25px;       /* lowers the image slightly below the baseline of the h2 */
+}
+
+
 /* ==================== Prospective Students Page ==================== */
 .recruiting-banner {
     background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
