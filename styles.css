@@ -315,6 +315,7 @@ ul {
 
 .team-member-detailed img {
     width: 100%;
+    max-width: 200px;
     border-radius: 4px;
 }
 
@@ -342,7 +343,7 @@ ul {
 
 .team-member img {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 4px;
