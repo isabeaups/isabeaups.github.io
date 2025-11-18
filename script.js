@@ -1,7 +1,7 @@
 // ==================== Language Switching ====================
 let currentLanguage = 'en';
 
-function switchLanguage(lang) {
+/*function switchLanguage(lang) {
     currentLanguage = lang;
     
     // Update button states
@@ -33,7 +33,45 @@ function switchLanguage(lang) {
     
     // Store preference
     localStorage.setItem('preferredLanguage', lang);
+}*/
+function switchLanguage(lang) {
+    currentLanguage = lang;
+
+    // Update button states
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('lang-fr').classList.toggle('active', lang === 'fr');
+
+    // Update all elements with data-en and data-fr attributes
+    const elements = document.querySelectorAll('[data-en][data-fr]');
+    elements.forEach(element => {
+        const content = element.getAttribute(`data-${lang}`);
+        if (content) {
+            // If element has children, only update its own text node
+            if (element.children.length > 0) {
+                // Update only the first text node (before children)
+                const firstTextNode = Array.from(element.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
+                if (firstTextNode) {
+                    firstTextNode.nodeValue = content + ' ';
+                }
+            } else {
+                element.textContent = content;
+            }
+        }
+    });
+
+    // Update page title
+    const title = document.querySelector('title');
+    if (title && title.hasAttribute(`data-${lang}`)) {
+        title.textContent = title.getAttribute(`data-${lang}`);
+    }
+
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+
+    // Store preference
+    localStorage.setItem('preferredLanguage', lang);
 }
+
 
 // Load saved language preference on page load
 document.addEventListener('DOMContentLoaded', function() {
