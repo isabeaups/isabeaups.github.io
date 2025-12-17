@@ -1,3 +1,29 @@
+// ==================== MARKDOWN Support
+
+// Create a promise that resolves when Marked is loaded
+const markedReady = new Promise((resolve, reject) => {
+  const s = document.createElement("script");
+  s.src = "https://cdn.jsdelivr.net/npm/marked/marked.min.js";
+  s.onload = () => {
+    console.log("Marked is loaded!");
+    resolve();
+  };
+  s.onerror = (e) => reject(e);
+  document.head.appendChild(s);
+});
+
+function renderMarkdownInTranslatedElements() {
+  const nodes = document.querySelectorAll('[data-en][data-fr]');
+  nodes.forEach(el => {
+    // switchLanguage has set textContent to the Markdown
+    const md = el.textContent || '';
+    // Convert to HTML only if Marked is available
+    const html = window.marked.parse(md, { breaks: true });
+    el.innerHTML = html;
+  });
+}
+
+
 // ==================== Language Switching ====================
 let currentLanguage = 'en';
 
@@ -73,12 +99,36 @@ function switchLanguage(lang) {
 }
 
 
+
+
 // Load saved language preference on page load
 document.addEventListener('DOMContentLoaded', function() {
     const savedLanguage = localStorage.getItem('preferredLanguage');
     if (savedLanguage) {
         switchLanguage(savedLanguage);
     }
+    // Re-render Markdown elements.
+
+  // Ensure Marked is loaded before rendering Markdown
+  markedReady
+    .then(() => renderMarkdownInTranslatedElements())
+    .catch((err) => console.error('Failed to load Marked:', err));
+
+  // If you have inline onclick on buttons, you can also hook rendering after switches:
+  const enBtn = document.getElementById('lang-en');
+  const frBtn = document.getElementById('lang-fr');
+
+  enBtn?.addEventListener('click', () => {
+    switchLanguage('en');
+    markedReady.then(renderMarkdownInTranslatedElements);
+  });
+
+  frBtn?.addEventListener('click', () => {
+    switchLanguage('fr');
+    markedReady.then(renderMarkdownInTranslatedElements);
+  });
+
+
     
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

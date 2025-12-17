@@ -59,11 +59,28 @@
                 <h2 data-en="Current Research Projects" data-fr="Projets de recherche actuels">Current Research Projects</h2>
                 
                 <div class="research-project">
-                    <h3 data-en="Combinatorial Generalization with Tensorial Representations" data-fr="[Titre du projet 1]">Combinatorial Generalization with Tensorial Representations</h3>
-                    <p data-en="[Description of the project, including objectives, methodology, and expected outcomes. Include funding sources and collaborators.]"
-                       data-fr="[Description du projet, y compris les objectifs, la méthodologie et les résultats attendus. Inclure les sources de financement et les collaborateurs.]">
-                        [Description of the project, including objectives, methodology, and expected outcomes. Include funding sources and collaborators.]
-                    </p>
+                    <h3 data-en="Combinatorial Generalization with Tensorial Representations" data-fr="Généralisation combinatoire avec représentations tensorielles">Combinatorial Generalization with Tensorial Representations</h3>
+
+<section
+  id="combinatorial-generalization"
+    markdown=True
+  data-en='# Combinatorial Generalization in Neural Networks
+
+Current neural networks fail at combinatorial generalization -- recombining known concepts in novel ways -- because they destroy compositional structure at every layer. Previous approaches focused on disentangled representations, but this addresses only half the problem.
+
+My hypothesis is that combinatorial generalization requires both structured representations and operations that preserve this structure. This research develops inductive biases in representations and operations for neural networks which favour combinatorial generalization and then uses these principles to build neural architectures for purposes such as vision, and sequences and demonstrate applications in language modeling -- including for under-resourced Indigenous languages -- forestry robotics.
+
+We further aim to prove theoretical combinatorial generalization bounds.'
+  data-fr='# Généralisation combinatoire dans les réseaux de neurones
+
+Les réseaux de neurones actuels échouent à la généralisation combinatoire — recombiner des concepts connus de manière nouvelle — parce qu’ils détruisent la structure compositionnelle à chaque couche. Les approches précédentes se sont concentrées sur des représentations « désentremêlées », mais cela ne résout que la moitié du problème.
+
+Mon hypothèse est que la généralisation combinatoire requiert à la fois des représentations structurées et des opérations qui préservent cette structure. Cette recherche développe des biais inductifs dans les représentations et les opérations des réseaux de neurones qui favorisent la généralisation combinatoire, puis utilise ces principes pour concevoir des architectures pour la vision, les séquences, et pour démontrer des applications en modélisation de langue — y compris pour des langues autochtones sous-dotées — ainsi qu’en robotique forestière.
+
+Nous visons également à établir des bornes théoriques de généralisation combinatoire.'
+>
+</section>
+
                 </div>
 
                 <div class="research-project">
@@ -92,7 +109,7 @@
                     
                     
       -->              
-                    <p data-en="Contemporary deep learning is built on three foundational pillars:
+<!--                    <p data-en="Contemporary deep learning is built on three foundational pillars:
 Artificial neural networks with at least one hidden layer (that is, at least one layer of neurons between the input and the output),
 The formulation of an objective function that takes as input data and learnable parameters (the “synapses”) of the neural network and defines the AI’s performance by outputting a real number; the smaller this number, the better the AI performs, and
 The adjustment of the network’s “synapses” using the gradient backpropagation algorithm, which simply means that learning occurs by attempting to minimize the objective function by descending its gradient with respect to the synapses.
@@ -111,7 +128,46 @@ Ceci dit, l'apprentissage Hebbien (ou autre apprentissage local non-supervisé) 
 
 However, we know that the human brain does not learn by trying to minimize a global objective function. Instead, it learns through local learning rules at the level of individual neurons, such as Hebbian learning. Despite this, the brain is capable of developing multi-layered deep representations. We also know that local learning, such as Hebbian learning—which does not depend on a global objective function—is more robust, generalizes better beyond the training data (a major shortcoming of current deep learning), and is more resistant to catastrophic forgetting (the inability in current deep learning to learn multiple tasks sequentially without having to learn them all in parallel).
 That said, implementing Hebbian learning (or other unsupervised local learning) in artificial neural networks remains very challenging and performs poorly in deep learning contexts. This project addresses this problem and aims to develop unsupervised local learning rules that can still achieve effective learning in multi-layer neural networks.
-                    </p>
+                    </p>-->
+                
+
+<p
+  data-en="Contemporary deep learning is built on three foundational pillars:"
+  data-fr="L'apprentissage profond contemporain se fonde sur trois piliers porteurs :">
+    Contemporary deep learning is built on three foundational pillars:
+</p>
+
+<p
+  data-en="1) Artificial neural networks with at least one hidden layer (that is, at least one layer of neurons between the input and the output),"
+  data-fr="1) Les réseaux de neurones artificiels avec au moins une couche cachée (c'est-à-dire au moins une couche de neurones entre l'entrée et la sortie),">
+1) Artificial neural networks with at least one hidden layer (that is, at least one layer of neurons between the input and the output),</p>
+
+<p
+  data-en="2) The formulation of an objective function that takes as input data and learnable parameters (the “synapses”) and outputs a real number measuring performance; the smaller this number, the better the model,"
+  data-fr="2) La formulation d'une fonction objective qui prend en entrée des données et des paramètres à apprendre (les « synapses ») et retourne un réel mesurant la performance ; plus il est petit, meilleure est l'IA,">
+2) The formulation of an objective function that takes as input data and learnable parameters (the “synapses”) and outputs a real number measuring performance; the smaller this number, the better the model,</p>
+
+<p
+  data-en="3) The adjustment of the network’s “synapses” using gradient backpropagation, which means minimizing the objective function via gradient descent."
+  data-fr="3) La modification des « synapses » du réseau en utilisant la rétropropagation du gradient, c’est-à-dire en minimisant la fonction objective via descente de gradient.">
+3) The adjustment of the network’s “synapses” using gradient backpropagation, which means minimizing the objective function via gradient descent.</p>
+
+<p
+  data-en="However, we know that the human brain does not learn by minimizing a global objective function, but instead through local learning rules such as Hebbian learning."
+  data-fr="Nous savons pourtant que le cerveau humain n'apprend pas en minimisant une fonction objective globale, mais via des règles locales telles que l'apprentissage hebbien.">
+However, we know that the human brain does not learn by minimizing a global objective function, but instead through local learning rules such as Hebbian learning.</p>
+
+<p
+  data-en="Local learning rules are more robust, generalize better beyond training data, and are more resistant to catastrophic forgetting."
+  data-fr="Les règles d'apprentissage locales sont plus robustes, généralisent mieux hors des données d'entraînement et résistent mieux à l'oubli catastrophique.">
+Local learning rules are more robust, generalize better beyond training data, and are more resistant to catastrophic forgetting.</p>
+
+<p
+  data-en="However, implementing Hebbian or other unsupervised local learning rules in deep artificial neural networks remains challenging, and this project aims to address that challenge."
+  data-fr="Cependant, implémenter l’apprentissage hebbien ou d’autres formes d’apprentissage local non supervisé dans des réseaux de neurones profonds reste très difficile, et ce projet vise à relever ce défi.">
+However, implementing Hebbian or other unsupervised local learning rules in deep artificial neural networks remains challenging, and this project aims to address that challenge.</p>
+
+
                 </div>
             </section>
 
