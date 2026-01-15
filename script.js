@@ -12,16 +12,27 @@ const markedReady = new Promise((resolve, reject) => {
   document.head.appendChild(s);
 });
 
+
+// Rend le Markdown pour TOUS les éléments [markdown]
 function renderMarkdownInTranslatedElements() {
-  const nodes = document.querySelectorAll('[data-en][data-fr]');
+  const nodes = document.querySelectorAll('[markdown]');
   nodes.forEach(el => {
-    // switchLanguage has set textContent to the Markdown
-    const md = el.textContent || '';
-    // Convert to HTML only if Marked is available
+    // 🔹 Ne pas lire el.textContent (qui peut être du HTML rendu)
+    // 🔹 Repartir systématiquement du Markdown source pour la langue courante
+    const md = el.getAttribute(`data-${currentLanguage}`) || '';
+
+    // Convertir en HTML
     const html = window.marked.parse(md, { breaks: true });
-    el.innerHTML = html;
+
+    // 🔹 Vider complètement l'élément avant d'insérer (évite les doublons)
+    el.replaceChildren();
+
+    // Insérer le HTML rendu via fragment (plus sûr que concaténer des strings)
+    const frag = document.createRange().createContextualFragment(html);
+    el.appendChild(frag);
   });
 }
+
 
 
 // ==================== Language Switching ====================
@@ -69,7 +80,7 @@ function switchLanguage(lang) {
 
     // Update all elements with data-en and data-fr attributes
     const elements = document.querySelectorAll('[data-en][data-fr]');
-    elements.forEach(element => {
+/*    elements.forEach(element => {
         const content = element.getAttribute(`data-${lang}`);
         if (content) {
             // If element has children, only update its own text node
@@ -83,7 +94,19 @@ function switchLanguage(lang) {
                 element.textContent = content;
             }
         }
-    });
+    }*/
+elements.forEach(element => {
+    const content = element.getAttribute(`data-${lang}`);
+    if (!content) return;
+
+    // If the translation contains HTML tags, treat it as HTML
+    if (content.includes("<")) {
+        element.innerHTML = content;
+    } else {
+        element.textContent = content;
+    }
+}
+                    );
 
     // Update page title
     const title = document.querySelector('title');
